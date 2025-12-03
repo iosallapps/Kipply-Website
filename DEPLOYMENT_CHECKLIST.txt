@@ -1,0 +1,172 @@
+═══════════════════════════════════════════════════════════════════════════
+                    KIPPLY WEBSITE DEPLOYMENT CHECKLIST
+═══════════════════════════════════════════════════════════════════════════
+
+📁 WEBSITE FILES READY: ✅
+- index.html (Homepage)
+- privacy.html (Privacy Policy)
+- terms.html (Terms of Service)  
+- support.html (Support & FAQ)
+- styles.css (Stylesheet)
+- ads.txt (AdMob verification)
+- app-ads.txt (Mobile ads)
+- robots.txt (SEO)
+
+═══════════════════════════════════════════════════════════════════════════
+                           🚀 DEPLOYMENT STEPS
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 1: DEPLOY TO NETLIFY (FREE)
+□ Go to https://www.netlify.com
+□ Sign up with GitHub/Email
+□ Click "Add new site" → "Deploy manually"
+□ Drag the entire 'website' folder onto Netlify
+□ Wait for deployment (30 seconds)
+□ Note your temporary URL: _______________________.netlify.app
+
+STEP 2: CONNECT YOUR DOMAIN
+□ In Netlify: "Domain management" → "Add custom domain"
+□ Enter: kipplyapp.com
+□ Follow DNS instructions provided
+
+STEP 3: CONFIGURE DNS AT YOUR REGISTRAR
+Add these DNS records where you bought kipplyapp.com:
+
+□ A Record:    @ → 75.2.60.5
+□ CNAME:       www → [your-site-name].netlify.app
+
+STEP 4: WAIT FOR DNS PROPAGATION
+□ Wait 10-60 minutes (can take up to 48 hours)
+□ Check status at: https://dnschecker.org/
+□ HTTPS will be enabled automatically by Netlify
+
+═══════════════════════════════════════════════════════════════════════════
+                         📧 EMAIL SETUP
+═══════════════════════════════════════════════════════════════════════════
+
+SET UP: support@kipplyapp.com
+
+OPTION 1: Email Forwarding (Recommended - FREE)
+□ Go to your domain registrar dashboard
+□ Find "Email Forwarding" settings
+□ Create forward: support@kipplyapp.com → your-email@gmail.com
+□ Test by sending email to support@kipplyapp.com
+
+OPTION 2: Google Workspace ($6/month)
+□ Sign up at https://workspace.google.com/
+□ Add domain: kipplyapp.com
+□ Create: support@kipplyapp.com
+□ Professional Gmail interface
+
+═══════════════════════════════════════════════════════════════════════════
+                        🔧 UPDATE APP SETTINGS
+═══════════════════════════════════════════════════════════════════════════
+
+FILE: Kipply/Views/Tabs/SettingsTabView.swift
+
+FIND & REPLACE:
+
+Line 113:
+□ OLD: "https://kipply.app/privacy"
+□ NEW: "https://kipplyapp.com/privacy.html"
+
+Line 134:
+□ OLD: "https://kipply.app/terms"  
+□ NEW: "https://kipplyapp.com/terms.html"
+
+Line 68 & 238:
+□ OLD: "YOUR_APP_ID"
+□ NEW: (Your actual App Store ID after approval)
+
+REBUILD APP:
+□ Clean build folder (Product → Clean Build Folder)
+□ Build and test in simulator
+□ Verify all links work
+
+═══════════════════════════════════════════════════════════════════════════
+                      ✅ VERIFICATION CHECKLIST
+═══════════════════════════════════════════════════════════════════════════
+
+TEST ALL URLS (Wait for DNS first):
+□ https://kipplyapp.com (Homepage loads)
+□ https://kipplyapp.com/privacy.html (Privacy Policy)
+□ https://kipplyapp.com/terms.html (Terms of Service)
+□ https://kipplyapp.com/support.html (Support page)
+□ All pages show HTTPS lock icon (secure)
+□ All navigation links work
+□ Footer links work
+□ Mobile responsive (test on phone)
+
+EMAIL TEST:
+□ Send test email to: support@kipplyapp.com
+□ Verify you receive it at your personal email
+□ Reply to test email and confirm it works
+
+═══════════════════════════════════════════════════════════════════════════
+                   📱 APP STORE CONNECT SETUP
+═══════════════════════════════════════════════════════════════════════════
+
+When creating App Store listing, add these URLs:
+
+□ Privacy Policy URL:
+  https://kipplyapp.com/privacy.html
+
+□ Support URL:
+  https://kipplyapp.com/support.html
+
+□ Marketing URL (Optional):
+  https://kipplyapp.com
+
+═══════════════════════════════════════════════════════════════════════════
+                    🎯 FUTURE: ADMOB INTEGRATION
+═══════════════════════════════════════════════════════════════════════════
+
+When you integrate AdMob (v1.1):
+
+□ Create AdMob account at https://admob.google.com
+□ Get Publisher ID (format: pub-XXXXXXXXXXXXXXXX)
+□ Update ads.txt with your real Publisher ID
+□ Update app-ads.txt with your real Publisher ID
+□ Re-upload to Netlify (drag & drop again)
+□ Verify files accessible:
+  - https://kipplyapp.com/ads.txt
+  - https://kipplyapp.com/app-ads.txt
+
+═══════════════════════════════════════════════════════════════════════════
+                        🚨 FINAL CHECKLIST
+═══════════════════════════════════════════════════════════════════════════
+
+BEFORE APP STORE SUBMISSION:
+□ Website is live at kipplyapp.com
+□ All pages load with HTTPS
+□ support@kipplyapp.com email works (tested!)
+□ URLs updated in SettingsTabView.swift
+□ App rebuilt with new URLs
+□ Tested all features in app
+□ Privacy Policy URL added to App Store Connect
+□ Support URL added to App Store Connect
+
+POST-APPROVAL TASKS:
+□ Get App Store ID from App Store Connect
+□ Update "YOUR_APP_ID" in SettingsTabView.swift (lines 68, 238)
+□ Update homepage App Store links (replace all href="#")
+□ Rebuild and release v1.0.1 with correct links
+
+═══════════════════════════════════════════════════════════════════════════
+                          📞 SUPPORT RESOURCES
+═══════════════════════════════════════════════════════════════════════════
+
+DOCUMENTATION:
+- README.md - Full deployment guide
+- QUICK_START.md - 15-minute setup guide
+
+HELP:
+- Netlify Docs: https://docs.netlify.com/
+- DNS Checker: https://dnschecker.org/
+- AdMob Help: https://support.google.com/admob/
+
+═══════════════════════════════════════════════════════════════════════════
+
+                    ✅ YOU'RE READY TO LAUNCH! 🚀
+
+═══════════════════════════════════════════════════════════════════════════

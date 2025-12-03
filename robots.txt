@@ -1,0 +1,17 @@
+# robots.txt for kipplyapp.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location (create and upload sitemap.xml later)
+Sitemap: https://kipplyapp.com/sitemap.xml
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
