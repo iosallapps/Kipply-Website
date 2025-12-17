@@ -23,7 +23,7 @@ Since you're already using GitHub for Kipply, GitHub Pages is the simplest optio
 
 ```bash
 # Navigate to your project
-cd /Users/vladtudosoiu/Developer/Kipply
+cd /path/to/Kipply
 
 # Add website files to git
 git add website/
@@ -82,7 +82,7 @@ Done! Wait 10-60 minutes for DNS propagation.
 If you want to do everything in one go:
 
 ```bash
-cd /Users/vladtudosoiu/Developer/Kipply
+cd /path/to/Kipply
 
 # Add website files
 git add website/
@@ -172,7 +172,7 @@ After DNS propagates (10-60 minutes):
 Every time you make changes:
 
 ```bash
-cd /Users/vladtudosoiu/Developer/Kipply/website
+cd /path/to/Kipply/website
 
 # Make your edits to HTML/CSS files
 # Then:

@@ -12,7 +12,7 @@
 
 ### Ultra-Quick Deploy:
 ```bash
-cd /Users/vladtudosoiu/Developer/Kipply
+cd /path/to/Kipply
 git add website/
 git commit -m "Add website for kipplyapp.com"
 echo "kipplyapp.com" > website/CNAME
