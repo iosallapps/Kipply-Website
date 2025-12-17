@@ -1,16 +1,1 @@
-# ads.txt for kipplyapp.com
-# This file is for Google AdMob advertising verification
-# Replace YOUR_PUBLISHER_ID with your actual AdMob publisher ID when you create your AdMob account
-
-# Google AdMob
-google.com, pub-YOUR_PUBLISHER_ID, DIRECT, f08c47fec0942fa0
-
-# Instructions:
-# 1. Create AdMob account at https://admob.google.com
-# 2. Find your Publisher ID (format: pub-XXXXXXXXXXXXXXXX)
-# 3. Replace YOUR_PUBLISHER_ID above with your actual ID
-# 4. Upload this file to the root of kipplyapp.com
-# 5. Verify at https://adstxt.guru/
-
-# Example (don't use this):
-# google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
+google.com, pub-8551021742037488, DIRECT, f08c47fec0942fa0
