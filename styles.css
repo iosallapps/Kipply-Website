@@ -142,6 +142,13 @@ nav .container {
     justify-content: center;
 }
 
+.app-screenshot {
+    max-width: 280px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
 .mockup-placeholder {
     width: 280px;
     height: 560px;
