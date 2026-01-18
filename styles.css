@@ -142,6 +142,14 @@ nav .container {
     justify-content: center;
 }
 
+.app-screenshot {
+    width: 280px;
+    max-width: 280px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
 .mockup-placeholder {
     width: 280px;
     height: 560px;
@@ -163,71 +171,71 @@ nav .container {
 
 /* Features Section */
 .features {
-    padding: 100px 0;
-    background-color: var(--bg-white);
+    padding: 120px 0;
+    background-color: #fafafa;
+}
+
+.features-label {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
 }
 
 .features h2 {
     text-align: center;
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 16px;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 80px;
     color: var(--text-dark);
-    letter-spacing: -0.5px;
-}
-
-.features-subtitle {
-    text-align: center;
-    font-size: 18px;
-    color: var(--text-light);
-    margin-bottom: 64px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    letter-spacing: -1px;
+    line-height: 1.15;
 }
 
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 28px;
 }
 
 .feature-card {
     background-color: var(--bg-white);
-    padding: 32px;
-    border-radius: 12px;
+    padding: 36px 32px;
+    border-radius: 16px;
     text-align: left;
-    border: 1px solid var(--border-color);
-    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .feature-card:hover {
-    border-color: #d1d5db;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .feature-icon {
-    width: 48px;
-    height: 48px;
-    background-color: var(--bg-light);
-    border-radius: 10px;
+    width: 52px;
+    height: 52px;
+    background-color: #eef2ff;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    color: var(--primary-color);
 }
 
 .feature-card h3 {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: var(--text-dark);
 }
 
 .feature-card p {
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.65;
     font-size: 15px;
 }
 
@@ -429,6 +437,10 @@ footer {
     .steps {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .features h2 {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -438,7 +450,7 @@ footer {
     }
 
     .hero-content h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .cta-buttons {
@@ -451,17 +463,22 @@ footer {
         font-size: 14px;
     }
 
+    .features {
+        padding: 80px 0;
+    }
+
+    .features h2 {
+        font-size: 28px;
+        margin-bottom: 48px;
+    }
+
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .feature-card {
-        text-align: center;
-    }
-
-    .feature-icon {
-        margin-left: auto;
-        margin-right: auto;
+        padding: 28px 24px;
     }
 
     .steps {
@@ -472,7 +489,6 @@ footer {
         order: -1;
     }
 
-    .features h2,
     .how-it-works h2,
     .cta-section h2 {
         font-size: 28px;
