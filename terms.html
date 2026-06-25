@@ -2,26 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0b0f">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title>Terms of Service - Kipply</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Kipply</a></h1>
-                <ul class="nav-links">
-                    <li><a href="index.html#features">Features</a></li>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+        <defs>
+            <linearGradient id="kipplyGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3e8ef7"/>
+                <stop offset="1" stop-color="#2bd9cb"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Kipply home">
+                <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                Kipply
+            </a>
+            <nav aria-label="Primary">
+                <ul class="nav-links" id="navmenu">
+                    <li><a href="index.html#catch">Features</a></li>
+                    <li><a href="index.html#how">How it works</a></li>
                     <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
                     <li><a href="support.html">Support</a></li>
+                    <li class="nav-cta-li"><a class="nav-cta" href="https://apps.apple.com/app/id6756061280">Download on the App Store</a></li>
                 </ul>
+            </nav>
+            <div class="nav-actions">
+                <a class="btn btn-primary btn-store-nav" href="https://apps.apple.com/app/id6756061280">Download</a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu">
+                    <span></span>
+                </button>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
         <div class="legal-page">
             <h1>Terms of Service</h1>
             <p class="last-updated"><strong>Last Updated:</strong> December 3, 2025</p>
@@ -250,7 +275,7 @@
                 Any disputes arising out of or relating to these Terms or the App shall be resolved through:
             </p>
             <ul>
-                <li><strong>Informal Negotiation:</strong> Contact us at <a href="mailto:support@kipplyapp.com">support@kipplyapp.com</a> to resolve the issue informally</li>
+                <li><strong>Informal Negotiation:</strong> Contact us at <a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a> to resolve the issue informally</li>
                 <li><strong>Binding Arbitration:</strong> If informal resolution fails, disputes will be resolved through binding arbitration in accordance with the rules of the American Arbitration Association</li>
             </ul>
             <p>
@@ -277,7 +302,7 @@
                 If you have any questions, concerns, or feedback regarding these Terms or the App, please contact us:
             </p>
             <p>
-                <strong>Email:</strong> <a href="mailto:support@kipplyapp.com">support@kipplyapp.com</a><br>
+                <strong>Email:</strong> <a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a><br>
                 <strong>Website:</strong> <a href="https://kipplyapp.com">https://kipplyapp.com</a><br>
                 <strong>Support Page:</strong> <a href="https://kipplyapp.com/support.html">https://kipplyapp.com/support.html</a>
             </p>
@@ -299,41 +324,46 @@
                 <li><strong>Third-Party Beneficiary:</strong> Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</li>
             </ul>
 
-            <hr style="margin: 40px 0; border: none; border-top: 1px solid #e5e7eb;">
+            <hr style="margin: 40px 0; border: none; border-top: 1px solid rgba(255,255,255,0.09);">
 
-            <p style="text-align: center; color: #6b7280; margin-top: 40px;">
+            <p style="text-align: center; margin-top: 40px;">
                 <strong>By using Kipply, you agree to these Terms of Service.</strong><br>
                 Thank you for choosing Kipply to clean your photo library!
             </p>
         </div>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Kipply</h3>
-                    <p>Your Smart Photo Cleaner</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html" aria-label="Kipply home">
+                        <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                        Kipply
+                    </a>
+                    <p>The swipe-to-clean photo app for iPhone.</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-col">
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-col">
                     <h4>Support</h4>
                     <ul>
-                        <li><a href="support.html">Contact Us</a></li>
-                        <li><a href="mailto:support@kipplyapp.com">support@kipplyapp.com</a></li>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kipply. All rights reserved.</p>
+                <span>&copy; 2026 Kipply. All rights reserved.</span>
+                <span>Made for iPhone</span>
             </div>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>

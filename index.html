@@ -2,196 +2,312 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kipply - Your Smart Photo Cleaner. Swipe through your photos and reclaim storage in minutes.">
-    <meta name="keywords" content="photo cleaner, iOS app, photo organizer, swipe photos, delete photos, storage cleaner">
-    <title>Kipply - Smart Photo Cleaner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Kipply — Swipe your camera roll clean</title>
+    <meta name="description" content="Kipply is the swipe-to-clean photo app for iPhone. Flick left to delete, right to keep. Spot duplicates, blurry shots and screenshots on device, and win your storage back.">
+    <meta name="keywords" content="photo cleaner, swipe photos, delete duplicate photos, free up iphone storage, photo organizer, clean camera roll">
+    <meta name="theme-color" content="#0b0b0f">
+    <link rel="canonical" href="https://kipplyapp.com/">
+
+    <!-- Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kipplyapp.com/">
+    <meta property="og:title" content="Kipply — Swipe your camera roll clean">
+    <meta property="og:description" content="The swipe-to-clean photo app for iPhone. Left to delete, right to keep — duplicates, blurry shots and screenshots sorted on device.">
+    <meta property="og:image" content="https://kipplyapp.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kipply — Swipe your camera roll clean">
+    <meta name="twitter:description" content="The swipe-to-clean photo app for iPhone. Left to delete, right to keep.">
+    <meta name="twitter:image" content="https://kipplyapp.com/og-image.png">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Fonts (self-hosted, no third-party calls) -->
+    <link rel="preload" as="font" type="font/woff2" href="fonts/bricolage-800.woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Kipply",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS",
+      "description": "Swipe-to-clean photo app for iPhone. Flick left to delete, right to keep — with on-device detection of duplicates, blurry photos and screenshots.",
+      "url": "https://kipplyapp.com/",
+      "downloadUrl": "https://apps.apple.com/app/id6756061280"
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1 class="logo">Kipply</h1>
-                <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- shared brand gradient for every sparkle on the page -->
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+        <defs>
+            <linearGradient id="kipplyGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3e8ef7"/>
+                <stop offset="1" stop-color="#2bd9cb"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="/" aria-label="Kipply home">
+                <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                Kipply
+            </a>
+
+            <nav aria-label="Primary">
+                <ul class="nav-links" id="navmenu">
+                    <li><a href="#catch">Features</a></li>
+                    <li><a href="#how">How it works</a></li>
                     <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
                     <li><a href="support.html">Support</a></li>
+                    <li class="nav-cta-li"><a class="nav-cta" href="https://apps.apple.com/app/id6756061280">Download on the App Store</a></li>
                 </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a class="btn btn-primary btn-store-nav" href="https://apps.apple.com/app/id6756061280">Download</a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu">
+                    <span></span>
+                </button>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
+    <main id="main">
+        <!-- ======================= HERO ======================= -->
         <section class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <h2>Clean Your Photo Library<br>The Easy Way</h2>
-                    <p class="tagline">Swipe through your photos like your favorite apps. Delete what you don't need, keep what you love.</p>
-                    <div class="cta-buttons">
-                        <a href="https://apps.apple.com/app/id6756061280" class="btn btn-primary">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                            </svg>
-                            Download on App Store
+                <div class="hero-copy">
+                    <p class="eyebrow">iPhone · Photo cleaner</p>
+                    <h1>Your camera roll,<br><span class="grad">finally clean.</span></h1>
+                    <p class="lede">Kipply turns months of clutter into a few minutes of swiping. Flick left to delete, right to keep — duplicates, blurry shots and screenshots, all sorted on your iPhone.</p>
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="https://apps.apple.com/app/id6756061280" aria-label="Download Kipply on the App Store">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+                            <span class="store-sub"><small>Download on the</small><span>App Store</span></span>
                         </a>
-                        <a href="#features" class="btn btn-secondary">Learn More</a>
+                        <a class="btn btn-ghost" href="#how">See how it works</a>
                     </div>
+                    <p class="hero-assure">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        Your photos never leave your iPhone.
+                    </p>
                 </div>
-                <div class="hero-image">
-                    <div class="phone-mockup">
-                        <img src="app-screenshot.png" alt="Kipply App Screenshot" class="app-screenshot">
+
+                <div class="hero-visual">
+                    <div class="device" aria-hidden="true">
+                        <div class="device-screen">
+                            <div class="device-top">
+                                <span>REVIEW</span>
+                                <span class="pill">128 left</span>
+                            </div>
+                            <div class="deck" id="deck">
+                                <!-- back cards (depth) -->
+                                <div class="card c3">
+                                    <div class="card-photo">
+                                        <svg class="card-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="3.5"/></svg>
+                                    </div>
+                                    <div class="card-meta">
+                                        <span class="tag">Blurry</span>
+                                        <span class="title">Blurry photo</span>
+                                        <span class="sub">Low sharpness</span>
+                                    </div>
+                                </div>
+                                <div class="card c2">
+                                    <div class="card-photo">
+                                        <svg class="card-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16V6a2 2 0 0 1 2-2h10"/></svg>
+                                    </div>
+                                    <div class="card-meta">
+                                        <span class="tag">Duplicate</span>
+                                        <span class="title">Duplicate</span>
+                                        <span class="sub">3 of 4 similar</span>
+                                    </div>
+                                </div>
+                                <!-- top card (animated) -->
+                                <div class="card c1">
+                                    <span class="stamp stamp-delete">
+                                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                                        Delete
+                                    </span>
+                                    <span class="stamp stamp-keep">
+                                        Keep
+                                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                    </span>
+                                    <div class="card-photo">
+                                        <svg class="card-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg>
+                                    </div>
+                                    <div class="card-meta">
+                                        <span class="tag">Screenshot</span>
+                                        <span class="title">Screenshot</span>
+                                        <span class="sub">Apr 12 · 2:14 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deck-actions">
+                                <span class="act no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span>
+                                <span class="act undo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 3-7l-3 3"/></svg></span>
+                                <span class="act yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section id="features" class="features">
+        <!-- ======================= WHAT IT CATCHES ======================= -->
+        <section class="catch" id="catch">
             <div class="container">
-                <p class="features-label">FEATURES</p>
-                <h2>Powerful tools for<br>photo management</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="9" y1="15" x2="15" y2="15"></line>
-                            </svg>
-                        </div>
-                        <h3>Swipe to Organize</h3>
-                        <p>Intuitive swipe interface. Left to delete, right to keep. Process hundreds of photos efficiently.</p>
+                <div class="section-head reveal">
+                    <p class="eyebrow">What it catches</p>
+                    <h2>Kipply knows what's worth keeping.</h2>
+                    <p>On-device detection surfaces the clutter that quietly piles up — so you spend your swipes on the photos that actually matter.</p>
+                </div>
+
+                <div class="bento">
+                    <div class="tile reveal">
+                        <div class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16V6a2 2 0 0 1 2-2h10"/></svg></div>
+                        <h3>Duplicates</h3>
+                        <p>Burst shots and near-identical copies grouped together, so you keep the best one and bin the rest.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </div>
-                        <h3>Safe Deletion</h3>
-                        <p>Deleted photos are staged for review. Restore anytime before permanent removal.</p>
+                    <div class="tile reveal">
+                        <div class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+                        <h3>Blurry shots</h3>
+                        <p>Out-of-focus and motion-blurred frames flagged automatically, ready to clear in a swipe.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="18" y1="20" x2="18" y2="10"></line>
-                                <line x1="12" y1="20" x2="12" y2="4"></line>
-                                <line x1="6" y1="20" x2="6" y2="14"></line>
-                            </svg>
-                        </div>
-                        <h3>Analytics</h3>
-                        <p>Track storage saved and photos cleaned. Monitor your progress with detailed insights.</p>
+                    <div class="tile reveal">
+                        <div class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
+                        <h3>Screenshots</h3>
+                        <p>Receipts, memes and one-off captures you saved and forgot — rounded up in one place.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="16" y1="2" x2="16" y2="6"></line>
-                                <line x1="8" y1="2" x2="8" y2="6"></line>
-                                <line x1="3" y1="10" x2="21" y2="10"></line>
-                            </svg>
-                        </div>
+
+                    <div class="tile wide reveal">
+                        <div class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg></div>
+                        <h3>Space-hungry videos</h3>
+                        <p>The handful of long clips eating most of your storage, sorted so you can see exactly what's worth keeping.</p>
+                    </div>
+                    <div class="tile wide reveal">
+                        <div class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h12v12H4z"/><path d="M8 4h12v12"/></svg></div>
                         <h3>Memory Lane</h3>
-                        <p>Rediscover photos from this day in past years. Browse memories by month.</p>
+                        <p>Rediscover photos from this day in past years and browse memories by month while you tidy up.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                            </svg>
+
+                    <div class="tile feature reveal">
+                        <div>
+                            <div class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+                            <h3>Nothing's gone until you say so</h3>
+                            <p>Every swipe is undoable, and binned photos sit safely in the Deleted tab. You confirm the final removal — so you never lose a keeper by reflex.</p>
                         </div>
-                        <h3>Privacy First</h3>
-                        <p>All processing happens locally on your device. No cloud uploads. Your data stays yours.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                        </div>
-                        <h3>Fast Performance</h3>
-                        <p>Optimized for speed. Smooth animations even with libraries of thousands of photos.</p>
+                        <svg class="sparkle feature-spark" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- How It Works -->
-        <section class="how-it-works">
+        <!-- ======================= HOW IT WORKS ======================= -->
+        <section class="how" id="how">
             <div class="container">
-                <h2>How It Works</h2>
-                <p class="how-it-works-subtitle">Get started in just four simple steps</p>
+                <div class="section-head reveal">
+                    <p class="eyebrow">How it works</p>
+                    <h2>Three steps to a lighter library.</h2>
+                </div>
+
                 <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Grant Access</h3>
-                        <p>Give Kipply permission to access your photo library</p>
+                    <div class="step reveal">
+                        <h3>Grant access</h3>
+                        <p>Give Kipply permission to read your library. Every scan runs right on your iPhone — nothing is uploaded.</p>
                     </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Start Swiping</h3>
-                        <p>Swipe left to delete, right to keep. It's that simple!</p>
+                    <div class="step reveal">
+                        <h3>Swipe to decide</h3>
+                        <p>Flick left to bin a photo, right to keep it. Move through hundreds in a single sitting.</p>
+                        <div class="verdict-row">
+                            <span class="verdict del">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+                                Delete
+                            </span>
+                            <span class="verdict keep">
+                                Keep
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </span>
+                        </div>
                     </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Review & Delete</h3>
-                        <p>Check the Deleted tab and permanently delete unwanted photos</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <h3>Enjoy Space</h3>
-                        <p>Reclaim gigabytes of storage on your iPhone!</p>
+                    <div class="step reveal">
+                        <h3>Confirm &amp; reclaim</h3>
+                        <p>Binned photos wait in the Deleted tab. Review, remove them for good, and watch the gigabytes come back.</p>
+                        <span class="undo-note">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 3-7l-3 3"/></svg>
+                            10-second undo on every swipe
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
+        <!-- ======================= PRIVACY ======================= -->
+        <section class="privacy">
             <div class="container">
-                <h2>Ready to Clean Your Photos?</h2>
-                <p>Download Kipply today and reclaim your storage</p>
-                <a href="https://apps.apple.com/app/id6756061280" class="btn btn-primary btn-large">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                    </svg>
-                    Get Kipply for iPhone
+                <div class="privacy-card reveal">
+                    <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                    <h2>Your photos never leave your iPhone.</h2>
+                    <p>Kipply scans and sorts entirely on device. No account, no photo uploads, no cloud copies — your library stays exactly where it is.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= FINAL CTA ======================= -->
+        <section class="cta">
+            <div class="container reveal">
+                <h2>Win your storage back this afternoon.</h2>
+                <p>Free up space without the dread. Download Kipply and start swiping.</p>
+                <a class="btn btn-primary btn-large" href="https://apps.apple.com/app/id6756061280" aria-label="Download Kipply on the App Store">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+                    <span class="store-sub"><small>Download on the</small><span>App Store</span></span>
                 </a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Kipply</h3>
-                    <p>Your Smart Photo Cleaner</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="/" aria-label="Kipply home">
+                        <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                        Kipply
+                    </a>
+                    <p>The swipe-to-clean photo app for iPhone.</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-col">
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-col">
                     <h4>Support</h4>
                     <ul>
-                        <li><a href="support.html">Contact Us</a></li>
+                        <li><a href="support.html">Help Center</a></li>
                         <li><a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kipply. All rights reserved.</p>
+                <span>&copy; 2026 Kipply. All rights reserved.</span>
+                <span>Made for iPhone</span>
             </div>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
