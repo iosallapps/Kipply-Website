@@ -29,7 +29,7 @@
 
     <!-- Fonts (self-hosted, no third-party calls) -->
     <link rel="preload" as="font" type="font/woff2" href="fonts/bricolage-800.woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 
     <script type="application/ld+json">
     {
@@ -60,7 +60,7 @@
     <header class="site-header">
         <div class="container nav">
             <a class="brand" href="/" aria-label="Kipply home">
-                <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                <svg class="sparkle" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
                 Kipply
             </a>
 
@@ -105,60 +105,44 @@
                 </div>
 
                 <div class="hero-visual">
-                    <div class="device" aria-hidden="true">
-                        <div class="device-screen">
-                            <div class="device-top">
-                                <span>REVIEW</span>
-                                <span class="pill">128 left</span>
+                    <figure class="hero-figure reveal">
+                        <img class="hero-photo" src="img/hero.jpg" width="690" height="1500"
+                             alt="Someone clearing their photo library on an iPhone, with photos lifting off the screen">
+                        <div class="storage-card">
+                            <div class="sc-head">
+                                <span class="sc-label">iPhone Storage</span>
+                                <span class="sc-used">118.2 / 128 GB</span>
                             </div>
-                            <div class="deck" id="deck">
-                                <!-- back cards (depth) -->
-                                <div class="card c3">
-                                    <div class="card-photo">
-                                        <svg class="card-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="3.5"/></svg>
-                                    </div>
-                                    <div class="card-meta">
-                                        <span class="tag">Blurry</span>
-                                        <span class="title">Blurry photo</span>
-                                        <span class="sub">Low sharpness</span>
-                                    </div>
-                                </div>
-                                <div class="card c2">
-                                    <div class="card-photo">
-                                        <svg class="card-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16V6a2 2 0 0 1 2-2h10"/></svg>
-                                    </div>
-                                    <div class="card-meta">
-                                        <span class="tag">Duplicate</span>
-                                        <span class="title">Duplicate</span>
-                                        <span class="sub">3 of 4 similar</span>
-                                    </div>
-                                </div>
-                                <!-- top card (animated) -->
-                                <div class="card c1">
-                                    <span class="stamp stamp-delete">
-                                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-                                        Delete
-                                    </span>
-                                    <span class="stamp stamp-keep">
-                                        Keep
-                                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                                    </span>
-                                    <div class="card-photo">
-                                        <svg class="card-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg>
-                                    </div>
-                                    <div class="card-meta">
-                                        <span class="tag">Screenshot</span>
-                                        <span class="title">Screenshot</span>
-                                        <span class="sub">Apr 12 · 2:14 PM</span>
-                                    </div>
-                                </div>
+                            <div class="sc-bar" role="img" aria-label="118.2 of 128 gigabytes used, 18.4 gigabytes ready to free up">
+                                <span class="sc-fill"></span>
+                                <span class="sc-freed"></span>
                             </div>
-                            <div class="deck-actions">
-                                <span class="act no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span>
-                                <span class="act undo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 3-7l-3 3"/></svg></span>
-                                <span class="act yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                            <div class="sc-foot">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>
+                                <span><strong>18.4 GB</strong> ready to free up</span>
                             </div>
                         </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= SMART SCAN ======================= -->
+        <section class="scan" id="scan">
+            <div class="container">
+                <figure class="scan-figure reveal">
+                    <img class="scan-img" src="img/scan.jpg" width="402" height="874"
+                         alt="Kipply scanning a photo library and grouping duplicates, blurry photos, screenshots and similar shots">
+                </figure>
+                <div class="scan-copy reveal">
+                    <p class="eyebrow">Smart scan</p>
+                    <h2>See exactly what's<br>eating your storage.</h2>
+                    <p>Kipply scans your whole library on device and groups the clutter — duplicates, blurry frames, screenshots and look-alikes — with a live count and the space you'll get back.</p>
+                    <div class="scan-chips">
+                        <span class="scan-chip"><i></i> Duplicates <b>1,248</b></span>
+                        <span class="scan-chip"><i></i> Blurry <b>327</b></span>
+                        <span class="scan-chip"><i></i> Screenshots <b>542</b></span>
+                        <span class="scan-chip"><i></i> Similar <b>786</b></span>
                     </div>
                 </div>
             </div>
@@ -207,7 +191,7 @@
                             <h3>Nothing's gone until you say so</h3>
                             <p>Every swipe is undoable, and binned photos sit safely in the Deleted tab. You confirm the final removal — so you never lose a keeper by reflex.</p>
                         </div>
-                        <svg class="sparkle feature-spark" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                        <svg class="sparkle feature-spark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
                     </div>
                 </div>
             </div>
@@ -256,7 +240,7 @@
         <section class="privacy">
             <div class="container">
                 <div class="privacy-card reveal">
-                    <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                    <svg class="sparkle" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
                     <h2>Your photos never leave your iPhone.</h2>
                     <p>Kipply scans and sorts entirely on device. No account, no photo uploads, no cloud copies — your library stays exactly where it is.</p>
                 </div>
@@ -281,7 +265,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a class="brand" href="/" aria-label="Kipply home">
-                        <svg class="sparkle" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                        <svg class="sparkle" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
                         Kipply
                     </a>
                     <p>The swipe-to-clean photo app for iPhone.</p>
@@ -308,6 +292,6 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js?v=2" defer></script>
 </body>
 </html>

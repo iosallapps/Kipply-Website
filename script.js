@@ -66,29 +66,4 @@
             }, 600);
         });
     }
-
-    /* ----- Swipe demo: play on view, then settle -------------------- */
-    var deck = document.getElementById('deck');
-    if (deck && !reduceMotion && 'IntersectionObserver' in window) {
-        var topCard = deck.querySelector('.card.c1');
-        var played = false;
-
-        var deckIO = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting && !played) {
-                    played = true;
-                    deck.classList.add('is-playing');
-                    deckIO.disconnect();
-                }
-            });
-        }, { threshold: 0.55 });
-        deckIO.observe(deck);
-
-        // Remove the class once the loops finish so it rests cleanly.
-        if (topCard) {
-            topCard.addEventListener('animationend', function () {
-                deck.classList.remove('is-playing');
-            });
-        }
-    }
 })();
