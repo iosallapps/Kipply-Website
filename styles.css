@@ -284,8 +284,12 @@ a {
     background: rgba(11, 11, 15, 0.72);
     backdrop-filter: saturate(160%) blur(18px);
     -webkit-backdrop-filter: saturate(160%) blur(18px);
-    border-bottom: 1px solid var(--ink-line);
     padding-top: env(safe-area-inset-top);
+    transition: box-shadow 0.3s var(--ease);
+}
+/* depth on scroll instead of a hairline rule */
+.site-header.scrolled {
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
@@ -533,7 +537,6 @@ a {
 /* ----- Storage-scan showcase (real app scan art) ----------------------- */
 .scan {
     padding-block: var(--section-y);
-    border-top: 1px solid var(--ink-line);
 }
 .scan .container {
     display: grid;
@@ -614,7 +617,6 @@ a {
 /* ----- Detection bento -------------------------------------------------- */
 .catch {
     padding-block: var(--section-y);
-    border-top: 1px solid var(--ink-line);
 }
 
 .bento {
@@ -689,7 +691,6 @@ a {
 /* ----- How it works ----------------------------------------------------- */
 .how {
     padding-block: var(--section-y);
-    border-top: 1px solid var(--ink-line);
 }
 
 .steps {
@@ -759,7 +760,6 @@ a {
 /* ----- Privacy band ----------------------------------------------------- */
 .privacy {
     padding-block: var(--section-y);
-    border-top: 1px solid var(--ink-line);
 }
 .privacy-card {
     position: relative;
@@ -793,7 +793,6 @@ a {
 .cta {
     padding-block: var(--section-y);
     text-align: center;
-    border-top: 1px solid var(--ink-line);
 }
 .cta h2 {
     font-family: var(--font-display);
@@ -813,7 +812,6 @@ a {
 
 /* ----- Footer ----------------------------------------------------------- */
 .site-footer {
-    border-top: 1px solid var(--ink-line);
     padding: 56px 0 calc(28px + env(safe-area-inset-bottom));
     background: var(--ink-2);
 }
@@ -854,7 +852,6 @@ a {
     gap: 16px;
     flex-wrap: wrap;
     padding-top: 24px;
-    border-top: 1px solid var(--ink-line);
     color: var(--faint);
     font-size: 14px;
 }

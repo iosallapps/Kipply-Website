@@ -6,6 +6,16 @@
 
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    /* ----- Header gets depth once you scroll (no static hairline) --- */
+    var header = document.querySelector('.site-header');
+    if (header) {
+        var onScroll = function () {
+            header.classList.toggle('scrolled', window.scrollY > 8);
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+    }
+
     /* ----- Mobile nav ----------------------------------------------- */
     var toggle = document.querySelector('.nav-toggle');
     var menu = document.getElementById('navmenu');
