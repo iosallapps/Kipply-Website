@@ -557,11 +557,11 @@ a {
 .scan-img {
     position: relative;
     z-index: 1;
-    width: min(300px, 78vw);
+    width: min(380px, 84vw);
     display: block;
-    border-radius: 30px;
-    border: 1px solid var(--ink-line-strong);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.55);
+    border-radius: 24px;
+    border: 1px solid var(--ink-line);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
 }
 .scan-chips {
     display: flex;
