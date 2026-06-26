@@ -558,6 +558,11 @@ a {
     position: relative;
     z-index: 1;
     width: min(380px, 84vw);
+    /* hard cap height + cover so no source (even a stale-cached tall one)
+       can ever render as an oversized half-empty box again */
+    max-height: 440px;
+    object-fit: cover;
+    object-position: 50% 30%;
     display: block;
     border-radius: 24px;
     border: 1px solid var(--ink-line);
