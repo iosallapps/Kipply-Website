@@ -439,193 +439,171 @@ a {
     color: var(--brand-teal);
 }
 
-/* ----- Signature: swipe deck ------------------------------------------- */
-.device {
+/* ----- Hero visual: lifestyle photo + storage gauge -------------------- */
+.hero-figure {
     position: relative;
-    width: min(340px, 80vw);
+    width: min(420px, 90%);
     margin-inline: auto;
-    aspect-ratio: 9 / 17.5;
-    background: linear-gradient(180deg, var(--ink-raised), var(--ink-2));
-    border: 1px solid var(--ink-line-strong);
-    border-radius: 42px;
-    padding: 16px;
-    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-.device-screen {
-    position: relative;
-    height: 100%;
+.hero-photo {
+    width: 100%;
+    height: clamp(420px, 56vh, 540px);
+    object-fit: cover;
+    object-position: 50% 36%;
     border-radius: 28px;
-    background: radial-gradient(120% 90% at 50% 0%, #1d1d27, var(--ink) 70%);
-    border: 1px solid var(--ink-line);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding: 18px 16px;
-}
-
-.device-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--mute);
-    margin-bottom: 14px;
-}
-.device-top .pill {
-    padding: 3px 10px;
-    border-radius: 999px;
-    border: 1px solid var(--ink-line);
-    color: var(--paper);
-}
-
-.deck {
-    position: relative;
-    flex: 1;
-    perspective: 1000px;
-}
-
-.card {
-    position: absolute;
-    inset: 0;
-    border-radius: 20px;
     border: 1px solid var(--ink-line-strong);
-    background: linear-gradient(160deg, var(--ink-raised-2), var(--ink-raised));
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
-    overflow: hidden;
-    transform-origin: 50% 120%;
-}
-
-/* depth: cards behind the top one */
-.card.c3 { transform: translateY(20px) scale(0.9); opacity: 0.5; }
-.card.c2 { transform: translateY(10px) scale(0.95); opacity: 0.8; }
-.card.c1 { z-index: 3; }
-
-.card-photo {
-    height: 64%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-/* stand-in "photo" textures per junk category — no stock images needed */
-.card.c1 .card-photo { background: linear-gradient(135deg, #2a2f5e, #3a2a4e); }
-.card.c2 .card-photo { background: linear-gradient(135deg, #1f3a3a, #243a2c); }
-.card.c3 .card-photo { background: linear-gradient(135deg, #3a2330, #2a2540); }
-
-.card-glyph {
-    width: 64px;
-    height: 64px;
-    opacity: 0.92;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.card-meta {
-    padding: 14px 16px;
-}
-.card-meta .tag {
-    display: inline-block;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--brand-teal);
-    border: 1px solid var(--ink-line-strong);
-    border-radius: 999px;
-    padding: 3px 8px;
-}
-.card-meta .title {
+    box-shadow: 0 44px 90px rgba(0, 0, 0, 0.55);
     display: block;
-    margin-top: 10px;
-    font-weight: 700;
-    font-size: 16px;
-}
-.card-meta .sub {
-    color: var(--mute);
-    font-size: 13px;
-    margin-top: 2px;
 }
 
-/* verdict stamps — color + word + arrow + icon (colorblind-safe) */
-.stamp {
+/* floating glass storage gauge — the "phone storage cleaning" payoff */
+.storage-card {
     position: absolute;
-    top: 18px;
+    left: clamp(-8px, -2vw, 0px);
+    bottom: 22px;
+    width: min(280px, 84%);
+    padding: 16px 18px;
+    border-radius: 18px;
+    background: rgba(17, 17, 23, 0.74);
+    border: 1px solid var(--ink-line-strong);
+    box-shadow: 0 26px 54px rgba(0, 0, 0, 0.55);
+    backdrop-filter: saturate(150%) blur(18px);
+    -webkit-backdrop-filter: saturate(150%) blur(18px);
+}
+.sc-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+}
+.sc-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+.sc-used {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--mute);
+}
+.sc-bar {
+    position: relative;
+    height: 10px;
+    margin: 12px 0 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.10);
+    overflow: hidden;
+}
+.sc-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 92%;
+    background: linear-gradient(90deg, #5a6170, #9aa0ad);
+    border-radius: 999px;
+}
+.sc-freed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 76%;
+    width: 16%;
+    background: var(--keep);
+    box-shadow: 0 0 14px rgba(48, 209, 88, 0.6);
+}
+.sc-foot {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: var(--mute);
+}
+.sc-foot svg {
+    width: 15px;
+    height: 15px;
+    color: var(--keep);
+    flex-shrink: 0;
+}
+.sc-foot strong {
+    color: var(--keep);
+    font-weight: 700;
+}
+
+/* ----- Storage-scan showcase (real app scan art) ----------------------- */
+.scan {
+    padding-block: var(--section-y);
+    border-top: 1px solid var(--ink-line);
+}
+.scan .container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: clamp(36px, 6vw, 80px);
+    align-items: center;
+}
+.scan-figure {
+    position: relative;
+    justify-self: center;
+}
+.scan-figure::before {
+    content: "";
+    position: absolute;
+    inset: -12% -8%;
+    background: radial-gradient(circle at 50% 45%, rgba(62, 142, 247, 0.28), rgba(43, 217, 203, 0.10) 45%, transparent 70%);
+    filter: blur(10px);
+    z-index: 0;
+    pointer-events: none;
+}
+.scan-img {
+    position: relative;
+    z-index: 1;
+    width: min(300px, 78vw);
+    display: block;
+    border-radius: 30px;
+    border: 1px solid var(--ink-line-strong);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.55);
+}
+.scan-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+.scan-chip {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-family: var(--font-display);
-    font-weight: 800;
-    font-size: 15px;
-    letter-spacing: 0.06em;
-    padding: 7px 12px;
-    border-radius: 10px;
-    opacity: 0;
-    text-transform: uppercase;
-}
-.stamp-delete {
-    left: 16px;
-    color: var(--delete);
-    border: 2px solid var(--delete);
-    transform: rotate(-12deg);
-    background: rgba(255, 69, 58, 0.08);
-}
-.stamp-keep {
-    right: 16px;
-    color: var(--keep);
-    border: 2px solid var(--keep);
-    transform: rotate(12deg);
-    background: rgba(48, 209, 88, 0.08);
-}
-
-/* action row mirrors the app's swipe controls */
-.deck-actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    margin-top: 16px;
-}
-.deck-actions .act {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    padding: 8px 13px;
+    border-radius: 999px;
     border: 1px solid var(--ink-line-strong);
     background: var(--ink-raised);
 }
-.deck-actions .act svg { width: 22px; height: 22px; }
-.deck-actions .act.no { color: var(--delete); }
-.deck-actions .act.undo { color: var(--mute); width: 40px; height: 40px; }
-.deck-actions .act.yes { color: var(--keep); }
-
-/* play-on-view animation (JS toggles .is-playing; ends → resting pose) */
-.deck.is-playing .card.c1 { animation: swipeDemo 5.6s var(--ease) 2; }
-.deck.is-playing .card.c1 .stamp-delete { animation: stampDelete 5.6s var(--ease) 2; }
-.deck.is-playing .card.c1 .stamp-keep { animation: stampKeep 5.6s var(--ease) 2; }
-
-@keyframes swipeDemo {
-    0%, 14% { transform: translateX(0) rotate(-1.5deg); }
-    24% { transform: translateX(-46px) rotate(-9deg); }
-    36% { transform: translateX(-460px) rotate(-20deg); opacity: 0; }
-    37% { transform: translateX(0) rotate(-1.5deg); opacity: 0; }
-    46%, 58% { transform: translateX(0) rotate(-1.5deg); opacity: 1; }
-    70% { transform: translateX(46px) rotate(9deg); }
-    82% { transform: translateX(460px) rotate(20deg); opacity: 0; }
-    83% { transform: translateX(0) rotate(-1.5deg); opacity: 0; }
-    92%, 100% { transform: translateX(0) rotate(-1.5deg); opacity: 1; }
+.scan-chip b {
+    color: var(--paper);
+    font-weight: 600;
 }
-@keyframes stampDelete {
-    0%, 16% { opacity: 0; }
-    26%, 34% { opacity: 1; }
-    38%, 100% { opacity: 0; }
+.scan-chip i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--brand-grad);
+    flex-shrink: 0;
 }
-@keyframes stampKeep {
-    0%, 60% { opacity: 0; }
-    70%, 80% { opacity: 1; }
-    84%, 100% { opacity: 0; }
+.scan-copy h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(28px, 4.8vw, 46px);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    margin-top: 16px;
+}
+.scan-copy > p {
+    color: var(--mute);
+    font-size: clamp(16px, 2.2vw, 19px);
+    margin-top: 16px;
+    max-width: 50ch;
 }
 
 /* ----- Detection bento -------------------------------------------------- */
@@ -944,6 +922,11 @@ a {
     .tile.wide { grid-column: span 2; }
     .tile.feature { grid-column: span 4; }
 
+    .scan .container { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+    .scan-figure { order: -1; }
+    .scan-chips { justify-content: center; }
+    .scan-copy > p { margin-inline: auto; }
+
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .footer-brand { grid-column: 1 / -1; }
 }
@@ -1018,9 +1001,4 @@ a {
         transition-duration: 0.001ms !important;
     }
     .reveal { opacity: 1; transform: none; }
-    .deck.is-playing .card.c1,
-    .deck.is-playing .card.c1 .stamp { animation: none; }
-    /* resting pose keeps both verdicts faintly visible for context */
-    .deck .card.c1 { transform: rotate(-1.5deg); }
-    .deck .stamp { opacity: 0.5; }
 }
