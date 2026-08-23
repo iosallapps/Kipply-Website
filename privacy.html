@@ -49,26 +49,36 @@
     <main id="main">
         <div class="legal-page">
             <h1>Privacy Policy</h1>
-            <p class="last-updated"><strong>Last Updated:</strong> December 3, 2025</p>
-            <p class="last-updated"><strong>Effective Date:</strong> December 3, 2025</p>
+            <p class="last-updated"><strong>Last Updated:</strong> August 23, 2026</p>
+            <p class="last-updated"><strong>Effective Date:</strong> August 23, 2026</p>
 
             <h2>1. Introduction</h2>
             <p>
                 Welcome to Kipply ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how Kipply handles your data when you use our mobile application (the "App").
             </p>
             <p>
-                <strong>Our Privacy Promise:</strong> Kipply is a privacy-first photo cleaning application. We do NOT collect, store, transmit, or share any of your personal information or photos. All photo processing happens locally on your device.
+                <strong>Our Privacy Promise:</strong> Your photos never leave your device. Every scan, comparison and deletion happens locally, and we never upload, store or transmit your photos or videos. Kipply is free to use and supported by advertising, so the app does include advertising and analytics services from Google and a subscription service from RevenueCat. What those services receive, and how you can turn them off, is set out below.
             </p>
 
             <h2>2. Information We Do NOT Collect</h2>
             <p>Kipply does NOT collect, access, store, or transmit:</p>
             <ul>
-                <li><strong>Your Photos or Videos:</strong> We never upload, store, or transmit your photos or videos to our servers or any third-party servers.</li>
-                <li><strong>Personal Information:</strong> We do not collect your name, email address, phone number, or any other personally identifiable information.</li>
-                <li><strong>Location Data:</strong> We do not access or collect your device's location information.</li>
-                <li><strong>Device Identifiers:</strong> We do not collect device IDs, advertising identifiers, or any unique identifiers (before AdMob integration).</li>
-                <li><strong>Usage Analytics:</strong> We do not track how you use the app, which features you access, or any behavioral data (in the current version).</li>
-                <li><strong>Contacts or Other Device Data:</strong> We do not access your contacts, messages, calendar, or any other data on your device besides photos.</li>
+                <li><strong>Your Photos or Videos:</strong> We never upload, store, or transmit your photos or videos to our servers or any third-party servers. The app has no photo upload capability at all.</li>
+                <li><strong>Personal Information:</strong> We do not collect your name, email address, phone number, or any other personally identifiable information. Kipply has no account and no sign-in.</li>
+                <li><strong>Location Data:</strong> We never request location permission. Where a photo already carries a location recorded by your camera, it is read on your device only to show it to you, and it is not sent anywhere.</li>
+                <li><strong>Contacts or Other Device Data:</strong> We do not access your contacts, messages, calendar, or any other data on your device besides photos and videos.</li>
+            </ul>
+
+            <h2>2A. Information Collected by the Services We Use</h2>
+            <p>
+                Kipply itself runs no servers. It does include third-party services, and those services collect data of their own:
+            </p>
+            <ul>
+                <li><strong>Google AdMob (advertising):</strong> receives your device's advertising identifier and technical information about the device and the ad, in order to serve and measure ads. If you do not allow tracking, ads are served without a personalized profile.</li>
+                <li><strong>Google Analytics for Firebase (usage measurement):</strong> receives anonymous events describing how the app is used, for example that a scan finished or a screen was opened. It never receives photo content.</li>
+                <li><strong>Firebase Crashlytics (crash reporting):</strong> receives crash reports so we can fix what breaks.</li>
+                <li><strong>Apple SKAdNetwork:</strong> tells an advertising network, without identifying you, that an install came from an ad.</li>
+                <li><strong>RevenueCat (subscriptions):</strong> receives an anonymous identifier and your App Store purchase status, so the app knows whether Kipply Pro is active. Your payment details are handled by Apple and never reach us or RevenueCat.</li>
             </ul>
 
             <h2>3. Photo Library Access</h2>
@@ -80,8 +90,8 @@
             <h3>3.2 How We Use Photo Access</h3>
             <ul>
                 <li><strong>Local Processing Only:</strong> All photo analysis, thumbnail generation, and organization happen entirely on your iPhone/iPad. Your photos never leave your device.</li>
-                <li><strong>PhotoBin Feature:</strong> When you swipe left to delete a photo, it is queued in the PhotoBin temporarily. This queue is stored locally on your device using iOS UserDefaults.</li>
-                <li><strong>Permanent Deletion:</strong> When you permanently delete photos from PhotoBin, they are removed from your device's photo library using Apple's Photos framework. We do not create backups or copies.</li>
+                <li><strong>Deleted tab Feature:</strong> When you swipe left to delete a photo, it is queued in the Deleted tab temporarily. This queue is stored locally on your device using iOS UserDefaults.</li>
+                <li><strong>Permanent Deletion:</strong> When you permanently delete photos from Deleted tab, they are removed from your device's photo library using Apple's Photos framework. We do not create backups or copies.</li>
                 <li><strong>Statistics Tracking:</strong> Basic statistics (e.g., number of photos reviewed, deleted) are stored locally on your device and are never transmitted to us.</li>
             </ul>
 
@@ -91,7 +101,7 @@
             <h2>4. Data Storage</h2>
             <p>All data generated by Kipply is stored locally on your device:</p>
             <ul>
-                <li><strong>PhotoBin Queue:</strong> Temporarily stored in iOS UserDefaults on your device</li>
+                <li><strong>Deleted tab Queue:</strong> Temporarily stored in iOS UserDefaults on your device</li>
                 <li><strong>Statistics:</strong> Stored in iOS UserDefaults on your device</li>
                 <li><strong>Preferences:</strong> App settings stored in iOS UserDefaults</li>
                 <li><strong>iCloud Sync:</strong> If you have iCloud Photo Library enabled, photo deletions will sync across your devices via Apple's iCloud, not our servers</li>
@@ -99,26 +109,50 @@
             <p><strong>We do NOT have access to any of this data.</strong> It never leaves your device except through Apple's own iCloud sync (if enabled).</p>
 
             <h2>5. Third-Party Services</h2>
-            <h3>5.1 Current Version (No Third Parties)</h3>
+            <h3>5.1 Advertising (Google AdMob)</h3>
             <p>
-                The current version of Kipply (v1.0) does NOT use any third-party services, analytics, or advertising networks. Your data is not shared with anyone.
-            </p>
-
-            <h3>5.2 Future Versions (AdMob Integration Planned)</h3>
-            <p>
-                In a future update, we plan to integrate Google AdMob to display advertisements. When this happens, this Privacy Policy will be updated, and the following data may be collected by AdMob:
+                Kipply is free and is supported by ads. Ads are served by Google AdMob, which may receive:
             </p>
             <ul>
-                <li>Device identifiers (Advertising ID)</li>
+                <li>Your device's advertising identifier (IDFA), only if you allow tracking when iOS asks</li>
                 <li>IP address</li>
                 <li>Ad interaction data (impressions, clicks)</li>
                 <li>Device information (model, OS version)</li>
             </ul>
             <p>
-                We will notify you via an app update before implementing ads, and you will have the option to review the updated Privacy Policy.
+                On your first run iOS asks whether Kipply may track you across other companies' apps and websites. If you decline, or if you never answer,
+                no advertising identifier is used and ads are served without a personalized profile. You can change this at any time in
+                iOS Settings, under Privacy &amp; Security, Tracking.
             </p>
             <p>
-                <strong>Important:</strong> Even with AdMob, your photos will NEVER be accessed, uploaded, or shared. Ads are generic and not personalized based on your photo content.
+                In the European Economic Area and the United Kingdom, a consent form from Google's User Messaging Platform is shown before any ad is
+                requested, and your choices there are respected. You can reopen it later from Settings inside the app, under Ad Privacy Settings.
+            </p>
+            <p>
+                Google's own privacy policy applies to the data it receives: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+            </p>
+
+            <h3>5.2 Analytics and Crash Reporting (Firebase)</h3>
+            <p>
+                Kipply uses Google Analytics for Firebase to understand how the app is used in aggregate, for example how many scans complete or which
+                screens are opened, and Firebase Crashlytics to receive crash reports. These services receive anonymous, app-generated events and
+                technical device information. They never receive your photos, your videos, or anything that identifies you by name.
+            </p>
+            <p>
+                In the European Economic Area and the United Kingdom, this measurement runs only if you consent to it in the form described above.
+            </p>
+
+            <h3>5.3 Subscriptions (RevenueCat and Apple)</h3>
+            <p>
+                Kipply Pro is an auto-renewing subscription sold through the App Store. Purchases are processed by Apple; we never see your payment
+                details. RevenueCat receives an anonymous identifier and your subscription status so that the app knows whether Pro is active. Their
+                privacy policy is at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.
+            </p>
+
+            <h3>5.4 What none of them ever receive</h3>
+            <p>
+                <strong>Your photos and videos never leave your device.</strong> No third-party service in Kipply has access to them, and ads are never
+                selected based on their content.
             </p>
 
             <h2>6. Children's Privacy</h2>
@@ -140,7 +174,7 @@
             <h2>8. Your Rights</h2>
             <p>Since we do not collect your personal information, traditional data rights (access, deletion, portability) do not apply. However, you have full control over your data:</p>
             <ul>
-                <li><strong>Delete App Data:</strong> Uninstall the app to remove all local data (PhotoBin queue, statistics, preferences).</li>
+                <li><strong>Delete App Data:</strong> Uninstall the app to remove all local data (Deleted tab queue, statistics, preferences).</li>
                 <li><strong>Reset Statistics:</strong> Use the "Reset All Statistics" option in Settings to clear tracked data.</li>
                 <li><strong>Revoke Access:</strong> Deny photo library access in iOS Settings to prevent the app from accessing your photos.</li>
             </ul>
@@ -184,12 +218,13 @@
 
             <h2>12. Legal Basis for Processing (GDPR)</h2>
             <p>
-                For EU users, we want to clarify that we do NOT process your personal data under GDPR definitions because:
+                Your photos are processed entirely on your device and never reach our servers. We operate no servers of our own, so the
+                personal data covered by GDPR is what the third-party services described in section 5 receive.
             </p>
             <ul>
-                <li>All processing happens locally on your device (not by us)</li>
-                <li>We do not act as a data controller or processor</li>
-                <li>Your photos and personal information never reach our servers</li>
+                <li><strong>Consent</strong> is the basis for advertising and analytics in the European Economic Area and the United Kingdom, collected through Google's consent form before any ad is requested. You can withdraw it at any time from Settings inside the app, under Ad Privacy Settings.</li>
+                <li><strong>Contract</strong> is the basis for processing your subscription status, which is what tells the app whether Kipply Pro is active.</li>
+                <li><strong>Your rights</strong> of access, correction, deletion, objection and portability are exercised against the service that holds the data. Google's controls are at <a href="https://myadcenter.google.com" target="_blank" rel="noopener">myadcenter.google.com</a>, and you can write to us at the address below and we will help.</li>
             </ul>
             <p>
                 If you have concerns about Apple's iCloud Photo Library (which syncs your photos across devices), please review Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a>.
@@ -200,16 +235,17 @@
             <ul>
                 <li>✅ Accesses your photo library with your permission</li>
                 <li>✅ Processes photos locally on your device</li>
-                <li>✅ Stores PhotoBin queue and statistics locally</li>
+                <li>✅ Stores the Deleted queue and your statistics locally</li>
                 <li>✅ Helps you delete unwanted photos</li>
+                <li>✅ Shows ads, and measures how the app is used, as described in section 5</li>
             </ul>
 
             <p><strong>What Kipply Does NOT Do:</strong></p>
             <ul>
                 <li>❌ Upload your photos to the internet</li>
-                <li>❌ Collect personal information</li>
-                <li>❌ Track your behavior</li>
-                <li>❌ Share your data with third parties (in v1.0)</li>
+                <li>❌ Ask for your name, email or an account</li>
+                <li>❌ Sell your data to anyone</li>
+                <li>❌ Use your photos to target ads, or share them with anyone</li>
                 <li>❌ Use your photos for any purpose other than displaying them to you</li>
             </ul>
 
@@ -217,7 +253,7 @@
 
             <p style="text-align: center; margin-top: 40px;">
                 <strong>Your Privacy Matters.</strong><br>
-                Kipply is built with privacy at its core. We believe your photos are yours, and they should stay on your device.
+                We believe your photos are yours, and they stay on your device.
             </p>
         </div>
     </main>
