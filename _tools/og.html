@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kipply Open Graph card</title>
+<!-- Rendered to ../og-image.png (1200x630) by `node _tools/shoot.mjs og`. Light look only: link previews do not follow the viewer's theme. -->
+<link rel="stylesheet" href="../styles.css">
+<style>
+    :root { color-scheme: light; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; }
+    body { background-image: linear-gradient(180deg, #E2EFFD 0%, #EEF6FE 55%, #E4F0FD 100%); }
+    .og { position: relative; width: 1200px; height: 630px; overflow: hidden; }
+    .og .blob-a { width: 420px; right: 300px; top: -230px; animation: none; }
+    .og .blob-b { width: 620px; right: -160px; top: 20px; animation: none; }
+    .og-copy { position: absolute; left: 72px; top: 0; height: 630px; width: 640px; display: flex; flex-direction: column; justify-content: center; gap: 24px; z-index: 1; }
+    .og-brand { display: inline-flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; letter-spacing: -0.02em; color: #0B1538; }
+    .og-brand svg { width: 52px; height: 52px; border-radius: 14px; box-shadow: 0 4px 10px rgb(30 58 110 / 0.2); }
+    .og h1 { font-size: 72px; line-height: 1.02; letter-spacing: -0.03em; color: #0B1538; text-wrap: balance; }
+    .og p { font-size: 26px; line-height: 1.4; color: #465B84; max-width: 20em; }
+    .og-facts { display: flex; gap: 10px; }
+    .og-facts .chip { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; font-size: 18px; font-weight: 600; color: #0B1538; }
+    .og-facts .chip i { width: 8px; height: 8px; border-radius: 50%; background: #0A63FC; }
+    .og-phone { position: absolute; right: 64px; top: 58px; width: 350px; filter: drop-shadow(0 26px 34px rgb(30 58 110 / 0.28)); z-index: 1; }
+</style>
+</head>
+<body>
+<div class="og">
+    <div class="blobs" aria-hidden="true"><div class="blob blob-a"></div><div class="blob blob-b"></div></div>
+    <div class="og-copy">
+        <div class="og-brand">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3e8ef7"/><stop offset="1" stop-color="#2bd9cb"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#g)"/><path fill="#fff" d="M13.5 5.5c.55 5.44 1.83 7.04 8.4 9.2-6.57 2.16-7.85 3.76-8.4 9.2-.55-5.44-1.83-7.04-8.4-9.2 6.57-2.16 7.85-3.76 8.4-9.2Zm9.3 0c.24 2.56.8 3.28 3.2 4.24-2.4.96-2.96 1.68-3.2 4.24-.24-2.56-.8-3.28-3.2-4.24 2.4-.96 2.96-1.68 3.2-4.24Z"/></svg>
+            Kipply
+        </div>
+        <h1>Swipe your camera roll clean.</h1>
+        <p>Photo and video cleaner for iPhone and iPad. Your photos never leave your device.</p>
+        <div class="og-facts">
+            <span class="chip"><i></i>Swipe to delete</span>
+            <span class="chip"><i></i>Smart Clean</span>
+            <span class="chip"><i></i>No account</span>
+        </div>
+    </div>
+    <img class="og-phone" src="../img/screens/home-720.webp" width="720" height="1469" alt="">
+</div>
+</body>
+</html>

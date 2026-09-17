@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0b0f">
+    <title>Privacy Policy - Kipply</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#E2EFFD">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#070C1C">
+    <link rel="canonical" href="https://kipplyapp.com/privacy.html">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <title>Privacy Policy - Kipply</title>
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=6">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
-        <defs>
-            <linearGradient id="kipplyGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#3e8ef7"/>
-                <stop offset="1" stop-color="#2bd9cb"/>
-            </linearGradient>
-        </defs>
-    </svg>
-
     <header class="site-header">
-        <div class="container nav">
-            <a class="brand" href="index.html" aria-label="Kipply home">
-                <svg class="sparkle" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
-                Kipply
-            </a>
-            <nav aria-label="Primary">
-                <ul class="nav-links" id="navmenu">
-                    <li><a href="index.html#catch">Features</a></li>
-                    <li><a href="index.html#how">How it works</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li class="nav-cta-li"><a class="nav-cta" href="https://apps.apple.com/app/id6756061280">Download on the App Store</a></li>
-                </ul>
-            </nav>
-            <div class="nav-actions">
-                <a class="btn btn-primary btn-store-nav" href="https://apps.apple.com/app/id6756061280">Download</a>
-                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu">
-                    <span></span>
-                </button>
+        <div class="container">
+            <div class="bar nav">
+                <a class="brand" href="./" aria-label="Kipply home">
+                    <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#3e8ef7"/>
+                                <stop offset="1" stop-color="#2bd9cb"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="32" height="32" rx="9" fill="url(#brandGrad)"/>
+                        <path fill="#fff" d="M13.5 5.5c.55 5.44 1.83 7.04 8.4 9.2-6.57 2.16-7.85 3.76-8.4 9.2-.55-5.44-1.83-7.04-8.4-9.2 6.57-2.16 7.85-3.76 8.4-9.2Zm9.3 0c.24 2.56.8 3.28 3.2 4.24-2.4.96-2.96 1.68-3.2 4.24-.24-2.56-.8-3.28-3.2-4.24 2.4-.96 2.96-1.68 3.2-4.24Z"/>
+                    </svg>
+                    Kipply
+                </a>
+
+                <nav class="nav-menu" id="navmenu" aria-label="Primary">
+                    <ul class="nav-links">
+                        <li><a href="./#features">Features</a></li>
+                        <li><a href="./#privacy">Privacy</a></li>
+                        <li><a href="./#faq">FAQ</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <a class="btn btn-solid" href="https://apps.apple.com/app/id6756061280">Download</a>
+                    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu">
+                        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
     <main id="main">
-        <div class="legal-page">
+        <div class="container legal-wrap">
+        <div class="glass legal-page">
             <h1>Privacy Policy</h1>
             <p class="last-updated"><strong>Last Updated:</strong> September 17, 2026</p>
             <p class="last-updated"><strong>Effective Date:</strong> September 17, 2026</p>
@@ -296,12 +305,13 @@
                 We aim to reply within 7 business days.
             </p>
 
-            <hr style="margin: 40px 0; border: none; border-top: 1px solid rgba(255,255,255,0.09);">
+            <hr class="legal-rule">
 
-            <p style="text-align: center; margin-top: 40px;">
+            <p class="legal-closing">
                 <strong>Your Privacy Matters.</strong><br>
                 We believe your photos are yours, and they stay on your device.
             </p>
+        </div>
         </div>
     </main>
 
@@ -309,33 +319,46 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a class="brand" href="index.html" aria-label="Kipply home">
-                        <svg class="sparkle" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M11 1.5C11.7 8.3 13.3 10.3 21.5 13 13.3 15.7 11.7 17.7 11 24.5 10.3 17.7 8.7 15.7 0.5 13 8.7 10.3 10.3 8.3 11 1.5ZM22 1.5C22.3 4.7 23 5.6 26 6.8 23 8 22.3 8.9 22 12.1 21.7 8.9 21 8 18 6.8 21 5.6 21.7 4.7 22 1.5Z"/></svg>
+                    <a class="brand" href="./" aria-label="Kipply home">
+                        <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+                            <rect width="32" height="32" rx="9" fill="url(#brandGrad)"/>
+                            <path fill="#fff" d="M13.5 5.5c.55 5.44 1.83 7.04 8.4 9.2-6.57 2.16-7.85 3.76-8.4 9.2-.55-5.44-1.83-7.04-8.4-9.2 6.57-2.16 7.85-3.76 8.4-9.2Zm9.3 0c.24 2.56.8 3.28 3.2 4.24-2.4.96-2.96 1.68-3.2 4.24-.24-2.56-.8-3.28-3.2-4.24 2.4-.96 2.96-1.68 3.2-4.24Z"/>
+                        </svg>
                         Kipply
                     </a>
-                    <p>The swipe-to-clean photo app for iPhone.</p>
+                    <p>Photo and video cleaner for iPhone and iPad. Swipe to delete, on your device.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
+                <nav class="footer-col" aria-labelledby="footer-kipply">
+                    <h2 id="footer-kipply">Kipply</h2>
+                    <ul>
+                        <li><a href="./#features">Features</a></li>
+                        <li><a href="./#privacy">Privacy</a></li>
+                        <li><a href="./#faq">FAQ</a></li>
+                        <li><a href="https://apps.apple.com/app/id6756061280">App Store</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-col" aria-labelledby="footer-legal">
+                    <h2 id="footer-legal">Legal</h2>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
+                </nav>
+                <nav class="footer-col" aria-labelledby="footer-support">
+                    <h2 id="footer-support">Support</h2>
                     <ul>
                         <li><a href="support.html">Help Center</a></li>
                         <li><a href="mailto:iosallapps@icloud.com">iosallapps@icloud.com</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
             <div class="footer-bottom">
                 <span>&copy; 2026 Kipply. All rights reserved.</span>
-                <span>Made for iPhone</span>
+                <span>Made for iPhone and iPad</span>
             </div>
         </div>
     </footer>
-    <script src="script.js?v=5" defer></script>
+
+    <script src="script.js?v=6" defer></script>
 </body>
 </html>
