@@ -1,8 +1,9 @@
 """Visible-text diff of the legal and support pages, main content and whole body,
 between main (before) and the working tree (after)."""
+import os
 import subprocess, re, difflib, sys
 from html.parser import HTMLParser
-SITE = '/Users/vladtudosoiu/Developer/Kipply-Website'
+SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class Text(HTMLParser):
     def __init__(self):
