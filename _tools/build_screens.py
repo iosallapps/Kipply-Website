@@ -45,21 +45,21 @@ from scipy import ndimage
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
 OUT = os.path.join(SITE, "img", "screens")
-CAPTURES = os.path.expanduser("~/Developer/Kipply/.redesign-work")
+CAPTURES = os.path.expanduser("~/Developer/ASO/Kipply/3-pipeline/assets/ui-glass/iphone/en")
 
 # slot -> capture path. Edit these to swap a screen.
 SOURCES = {
-    "home": f"{CAPTURES}/wave2/home-top-en-light.png",
-    "swipe": f"{CAPTURES}/wave3/WP3/SW5-drag-delete-en-light.png",
-    "smart": f"{CAPTURES}/wave3/wp4/SM11-smart-similar-en-light.png",
-    "deleted": f"{CAPTURES}/wave3/WP3/D4-selection-en-light.png",
-    "discover": f"{CAPTURES}/wave3/wp4/DI1-discover-feed-en-light.png",
+    "home": f"{CAPTURES}/01-home.png",
+    "swipe": f"{CAPTURES}/03-swipe.png",
+    "smart": f"{CAPTURES}/05-smart.png",
+    "deleted": f"{CAPTURES}/04-deleted.png",
+    "discover": f"{CAPTURES}/06-discover.png",
 }
 
 # slot -> (source slot, crop box as fractions of the screen width and height)
 CROPS = {
-    "stats-streak": ("home", (0.020, 0.1335, 0.980, 0.2563)),
-    "stats-progress": ("home", (0.020, 0.4977, 0.980, 0.5957)),
+    "stats-streak": ("home", (0.030, 0.1280, 0.970, 0.2260)),
+    "stats-progress": ("home", (0.030, 0.4610, 0.970, 0.5360)),
 }
 
 # slot -> list of (kind, box in the capture's own pixels, payload)
