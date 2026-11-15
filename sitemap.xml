@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://kipplyapp.com/</loc><lastmod>2026-11-15</lastmod></url>
-    <url><loc>https://kipplyapp.com/support.html</loc><lastmod>2026-11-15</lastmod></url>
-    <url><loc>https://kipplyapp.com/privacy.html</loc><lastmod>2026-11-15</lastmod></url>
-    <url><loc>https://kipplyapp.com/terms.html</loc><lastmod>2026-11-15</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kipplyapp.com/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/"/>
+  </url>
+  <url>
+    <loc>https://kipplyapp.com/ro/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/"/>
+  </url>
+  <url>
+    <loc>https://kipplyapp.com/support.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/support.html"/>
+  </url>
+  <url>
+    <loc>https://kipplyapp.com/ro/support.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/support.html"/>
+  </url>
+  <url>
+    <loc>https://kipplyapp.com/privacy.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://kipplyapp.com/ro/privacy.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://kipplyapp.com/terms.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/terms.html"/>
+  </url>
+  <url>
+    <loc>https://kipplyapp.com/ro/terms.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kipplyapp.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://kipplyapp.com/ro/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kipplyapp.com/terms.html"/>
+  </url>
 </urlset>

@@ -98,6 +98,8 @@ main { position: relative; display: block; }
 .nav-links a:hover { background: rgba(255,255,255,.08); }
 .nav-links a[aria-current="page"] { background: color-mix(in srgb, var(--c1) 45%, rgba(255,255,255,.06)); box-shadow: inset 0 1px 0 rgba(255,255,255,.2); }
 .nav-actions { display: flex; align-items: center; gap: 8px; }
+.lang-switch { display: inline-grid; place-items: center; min-width: 44px; height: 44px; padding: 0 12px; border-radius: 999px; font-size: 13.5px; font-weight: 600; letter-spacing: .04em; color: var(--text); background: rgba(255,255,255,.08); border: 1px solid var(--glass-line); transition: background .2s; }
+.lang-switch:hover { background: rgba(255,255,255,.16); }
 .nav-toggle { display: none; width: 46px; height: 46px; place-items: center; border-radius: 14px; cursor: pointer; background: rgba(255,255,255,.08); border: 1px solid var(--glass-line); color: var(--text); }
 .nav-toggle svg { width: 24px; height: 24px; }
 .nav-toggle .icon-close { display: none; }

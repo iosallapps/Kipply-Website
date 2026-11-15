@@ -16,7 +16,7 @@
 
     function setOpen(open) {
         toggle.setAttribute('aria-expanded', String(open));
-        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        toggle.setAttribute('aria-label', (open ? toggle.dataset.labelClose : toggle.dataset.labelOpen) || (open ? 'Close menu' : 'Open menu'));
         menu.classList.toggle('open', open);
     }
 
