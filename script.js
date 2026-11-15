@@ -3,6 +3,13 @@
 (function () {
     'use strict';
 
+    var header = document.querySelector('.site-header');
+    if (header) {
+        var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
+
     var toggle = document.querySelector('.nav-toggle');
     var menu = document.getElementById('navmenu');
     if (!toggle || !menu) return;

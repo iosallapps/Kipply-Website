@@ -6,9 +6,8 @@
     <meta name="apple-itunes-app" content="app-id=6756061280">
     <title>Kipply: Photo and Video Cleaner for iPhone and iPad</title>
     <meta name="description" content="Kipply helps you delete the photos and videos you no longer need. Swipe left to delete, right to keep. Smart Clean finds duplicates, similar shots and screenshots on your device. Your photos never leave your iPhone.">
-    <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#E2EFFD">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#070C1C">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#050b1c">
     <link rel="canonical" href="https://kipplyapp.com/">
 
     <!-- Social -->
@@ -31,9 +30,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Same-origin only: no fonts, no third-party scripts. The system font is the app's font. -->
+    <!-- Same-origin only: self-hosted fonts, no third-party scripts. -->
     <link rel="preload" as="image" href="img/screens/home-720.webp" imagesrcset="img/screens/home-360.webp 360w, img/screens/home-540.webp 540w, img/screens/home-720.webp 720w" imagesizes="(min-width: 900px) 340px, 70vw">
-    <link rel="stylesheet" href="styles.css?v=7">
+    <link rel="stylesheet" href="styles.css?v=20261115">
     <script>document.documentElement.classList.add('js');</script>
 
     <script type="application/ld+json">
@@ -58,16 +57,7 @@
         <div class="container">
             <div class="bar nav">
                 <a class="brand" href="./" aria-label="Kipply home">
-                    <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
-                        <defs>
-                            <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
-                                <stop offset="0" stop-color="#3e8ef7"/>
-                                <stop offset="1" stop-color="#2bd9cb"/>
-                            </linearGradient>
-                        </defs>
-                        <rect width="32" height="32" rx="9" fill="url(#brandGrad)"/>
-                        <path fill="#fff" d="M13.5 5.5c.55 5.44 1.83 7.04 8.4 9.2-6.57 2.16-7.85 3.76-8.4 9.2-.55-5.44-1.83-7.04-8.4-9.2 6.57-2.16 7.85-3.76 8.4-9.2Zm9.3 0c.24 2.56.8 3.28 3.2 4.24-2.4.96-2.96 1.68-3.2 4.24-.24-2.56-.8-3.28-3.2-4.24 2.4-.96 2.96-1.68 3.2-4.24Z"/>
-                    </svg>
+                    <img class="brand-mark" src="img/icon.webp" alt="" width="38" height="38">
                     Kipply
                 </a>
 
@@ -95,17 +85,13 @@
     <main id="main">
         <!-- ======================= HERO: the app's Home ======================= -->
         <section class="hero" aria-labelledby="hero-title">
-            <div class="blobs" aria-hidden="true">
-                <div class="blob blob-a"></div>
-                <div class="blob blob-b"></div>
-            </div>
             <div class="container">
                 <div class="hero-copy">
                     <p class="chip eyebrow">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
                         Photo and video cleaner for iPhone and iPad
                     </p>
-                    <h1 id="hero-title">Swipe your camera roll clean.</h1>
+                    <h1 id="hero-title">Swipe your camera roll <em>clean.</em></h1>
                     <p class="lede">Kipply helps you delete the photos and videos you no longer need. Swipe left to delete, right to keep, up to skip. Your photos never leave your device.</p>
                     <div class="hero-cta">
                         <a class="btn btn-cta" href="https://apps.apple.com/app/id6756061280">
@@ -151,7 +137,7 @@
             <div class="container">
                 <div class="section-head">
                     <p class="eyebrow">How Kipply works</p>
-                    <h2 id="features-title">Five tabs. One lighter library.</h2>
+                    <h2 id="features-title">Five tabs. <em>One lighter library.</em></h2>
                     <p class="lede">Home, Swipe, Smart, Deleted and Discover: the same screens you will find in the app, each doing one job.</p>
                 </div>
 
@@ -159,7 +145,7 @@
                 <article class="showcase" aria-labelledby="swipe-title">
                     <div class="showcase-copy">
                         <p class="eyebrow">Swipe</p>
-                        <h2 id="swipe-title">One photo at a time.</h2>
+                        <h2 id="swipe-title">One photo <em>at a time.</em></h2>
                         <p class="lede">Go through your library one photo at a time. Swipe left to delete, right to keep, or up to skip, and sort the pile newest, oldest or largest first.</p>
                         <ul class="points">
                             <li class="glass point">
@@ -185,7 +171,7 @@
                 <article class="showcase flip" aria-labelledby="smart-title">
                     <div class="showcase-copy">
                         <p class="eyebrow">Smart Clean</p>
-                        <h2 id="smart-title">Smart Clean finds the clutter.</h2>
+                        <h2 id="smart-title">Smart Clean finds <em>the clutter.</em></h2>
                         <p class="lede">Smart Clean scans your whole library on your device and gathers what you can clear. In each group of duplicates or similar shots, Kipply marks one to keep, and you can choose a different one with a tap.</p>
                         <ul class="points">
                             <li class="glass point">
@@ -211,7 +197,7 @@
                 <article class="showcase" aria-labelledby="deleted-title">
                     <div class="showcase-copy">
                         <p class="eyebrow">Deleted tab</p>
-                        <h2 id="deleted-title">You decide what goes.</h2>
+                        <h2 id="deleted-title">You decide <em>what goes.</em></h2>
                         <p class="lede">Swiped photos wait in the Deleted tab until you decide to restore them or delete them for good. Once you confirm, they move to Recently Deleted in the Photos app, where iOS keeps them for 30 days.</p>
                         <ul class="points">
                             <li class="glass point">
@@ -237,7 +223,7 @@
                 <article class="showcase flip" aria-labelledby="discover-title">
                     <div class="showcase-copy">
                         <p class="eyebrow">Discover</p>
-                        <h2 id="discover-title">Memories worth keeping.</h2>
+                        <h2 id="discover-title">Memories <em>worth keeping.</em></h2>
                         <p class="lede">Every day, Memory of the Day on Home brings back an older photo. Discover shows the photos you took on this date in past years and lets you browse your library month by month.</p>
                         <ul class="points">
                             <li class="glass point">
@@ -263,7 +249,7 @@
                 <article class="showcase" aria-labelledby="stats-title">
                     <div class="showcase-copy">
                         <p class="eyebrow">Statistics and streak</p>
-                        <h2 id="stats-title">Cleaning that feels like a game.</h2>
+                        <h2 id="stats-title">Cleaning that feels <em>like a game.</em></h2>
                         <p class="lede">Earn XP for every photo you review, level up, keep your daily streak going and complete daily and weekly challenges.</p>
                         <ul class="points">
                             <li class="glass point">
@@ -296,7 +282,7 @@
             <div class="container">
                 <div class="section-head">
                     <p class="eyebrow">And on Home</p>
-                    <h2 id="glance-title">Everything at a glance.</h2>
+                    <h2 id="glance-title">Everything <em>at a glance.</em></h2>
                 </div>
                 <ul class="grid-cards">
                     <li class="glass card">
@@ -329,7 +315,7 @@
                 <div class="glass privacy-card">
                     <div>
                         <p class="eyebrow">Private by design</p>
-                        <h2 id="privacy-title">Your photos never leave your device.</h2>
+                        <h2 id="privacy-title">Your photos never <em>leave your device.</em></h2>
                         <p class="lede">Kipply analyzes your photos on your device. Your photos and videos never leave it, and there is no account to create. Where the law requires consent, ads and analytics wait for your answer.</p>
                         <a class="privacy-link" href="privacy.html">
                             Read the Privacy Policy
@@ -359,7 +345,7 @@
             <div class="container">
                 <div class="section-head">
                     <p class="eyebrow">FAQ</p>
-                    <h2 id="faq-title">Questions, answered.</h2>
+                    <h2 id="faq-title">Questions, <em>answered.</em></h2>
                 </div>
                 <div class="faq-list">
                     <details class="glass faq">
@@ -413,14 +399,10 @@
 
         <!-- ======================= CTA ======================= -->
         <section class="section cta" aria-labelledby="cta-title">
-            <div class="blobs blobs-cta" aria-hidden="true">
-                <div class="blob blob-a"></div>
-                <div class="blob blob-b"></div>
-            </div>
             <div class="container">
                 <div class="glass cta-card">
                     <p class="eyebrow">Free to download</p>
-                    <h2 id="cta-title">Get your space back.</h2>
+                    <h2 id="cta-title">Get your <em>space back.</em></h2>
                     <p class="lede">Start with today's 25 swipes. Your photos stay on your device the whole time.</p>
                     <a class="btn btn-cta" href="https://apps.apple.com/app/id6756061280">
                         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
@@ -439,10 +421,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a class="brand" href="./" aria-label="Kipply home">
-                        <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
-                            <rect width="32" height="32" rx="9" fill="url(#brandGrad)"/>
-                            <path fill="#fff" d="M13.5 5.5c.55 5.44 1.83 7.04 8.4 9.2-6.57 2.16-7.85 3.76-8.4 9.2-.55-5.44-1.83-7.04-8.4-9.2 6.57-2.16 7.85-3.76 8.4-9.2Zm9.3 0c.24 2.56.8 3.28 3.2 4.24-2.4.96-2.96 1.68-3.2 4.24-.24-2.56-.8-3.28-3.2-4.24 2.4-.96 2.96-1.68 3.2-4.24Z"/>
-                        </svg>
+                        <img class="brand-mark" src="img/icon.webp" alt="" width="38" height="38">
                         Kipply
                     </a>
                     <p>Photo and video cleaner for iPhone and iPad. Swipe to delete, on your device.</p>
@@ -473,12 +452,12 @@
             </div>
             <div class="footer-bottom">
                 <span>&copy; 2026 Visto Apps, the brand of Darius Cirjan</span>
-                <span>Made for iPhone and iPad</span>
+                <span>Made by <a href="https://vistoapps.com">Visto Apps</a></span>
             </div>
         </div>
     </footer>
     <!-- @@/footer -->
 
-    <script src="script.js?v=6" defer></script>
+    <script src="script.js?v=20261115" defer></script>
 </body>
 </html>
