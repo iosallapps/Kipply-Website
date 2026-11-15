@@ -2,7 +2,7 @@
 
 > Kipply is a free phone cleaner for iPhone and iPad that deletes photos and videos you no longer need, by Visto Apps (https://vistoapps.com).
 
-You go through your camera roll one item at a time: swipe left to delete, right to keep, up to skip. Smart Clean scans the library on the device and groups exact duplicates, similar photos, similar videos, similar screenshots, and all videos and screenshots. Deleted items wait in the Deleted tab until you confirm, then move to Recently Deleted in the Photos app, where iOS keeps them for 30 days. Kipply works only on the Photos library: it does not clean caches, app data, system storage or contacts. Photos and videos never leave the device and there is no account. Requires iOS 18 or later.
+You go through your camera roll one item at a time: swipe left to delete, right to keep, up to skip. Smart Clean scans the library on the device and groups exact duplicates, similar photos, similar videos, similar screenshots, and all videos and screenshots. Deleted items wait in the Deleted tab until you confirm, then move to Recently Deleted in the Photos app, where iOS keeps them for 30 days. Kipply works only on the Photos library: it does not clean caches, app data, system storage or contacts. Photos and videos never leave the device and there is no account. Requires iOS 17 or later.
 
 Free to download and use, with 25 swipes a day, a limit on deleting many items at once, and ads. Kipply Pro (weekly or monthly auto-renewing subscription) removes the limits and the ads.
 
