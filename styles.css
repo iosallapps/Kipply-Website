@@ -1335,3 +1335,22 @@ p {
 .legal-strong {
     font-weight: 600;
 }
+
+/* Generated legal sections (tools/legal in the Visto Apps kit): contents list and service table. */
+.legal-toc { margin: 18px 0 8px; padding: 18px 22px; border-radius: 16px; border: 1px solid var(--divider); }
+.legal-toc ol { margin: 0; padding-left: 1.3em; columns: 2; column-gap: 32px; }
+.legal-toc li { margin-bottom: 6px; break-inside: avoid; }
+.legal-section { scroll-margin-top: 90px; }
+.legal-page .table-wrap { overflow-x: auto; margin: 16px 0 20px; border: 1px solid var(--divider); border-radius: 14px; }
+.legal-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; line-height: 1.5; }
+.legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--divider); color: var(--text-2); }
+.legal-table tbody th { color: var(--text); min-width: 140px; }
+.legal-table tbody tr:last-child > * { border-bottom: 0; }
+@media (max-width: 640px) {
+    .legal-toc ol { columns: 1; }
+    .legal-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .legal-table, .legal-table tbody, .legal-table tr, .legal-table th, .legal-table td { display: block; width: 100%; }
+    .legal-table th, .legal-table td { border: 0; padding: 3px 0; }
+    .legal-table tr { padding: 12px 14px; border-bottom: 1px solid var(--divider); }
+    .legal-table td::before { content: attr(data-label); display: block; font-size: 0.6875rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--text-3); }
+}
