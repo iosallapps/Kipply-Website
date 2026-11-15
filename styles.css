@@ -340,3 +340,8 @@ h1 em, h2 em {
   .legal-wrap { padding-left: 16px; padding-right: 16px; }
   .cta-card { margin-left: -12px; margin-right: -12px; }
 }
+
+/* overscroll:start  the aurora stretches from its bottom edge while iOS rubber-bands the top (--osy set by the script) */
+body::before { transform-origin: 50% 100%; scale: 1 calc(1 + var(--osy, 0) / 1500); }
+body::after { transform-origin: 50% 100%; scale: 1 calc(1 + var(--osy, 0) / 900); }
+/* overscroll:end */

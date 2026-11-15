@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FRAG = Path(sys.argv[1]).expanduser() if len(sys.argv) > 1 else None
 BASE = "https://kipplyapp.com"
-ASSET_V = "20261115b"
+ASSET_V = "20261116s"
 LASTMOD = "2026-11-15"
 APP_ID = "6756061280"
 STORE = f"https://apps.apple.com/app/id{APP_ID}"
@@ -164,7 +164,7 @@ RO_TEXT = {
     "Siri and Control Center": "Siri și Centrul de control",
     "Ask Siri to clean your photos or scan your library, or add the Free Up Space control to Control Center.": "Roagă Siri să-ți curețe pozele sau să scaneze galeria, ori adaugă controlul Eliberează spațiu în Centrul de control.",
     "iPhone and iPad": "iPhone și iPad",
-    "Kipply requires iOS 18 or later and works on iPhone and iPad.": "Kipply necesită iOS 18 sau mai nou și merge pe iPhone și pe iPad.",
+    "Kipply requires iOS 17 or later and works on iPhone and iPad.": "Kipply necesită iOS 17 sau mai nou și merge pe iPhone și pe iPad.",
     "Private by design": "Confidențială prin construcție",
     "Your photos never": "Pozele tale nu",
     "leave your device.": "părăsesc telefonul.",
@@ -198,7 +198,7 @@ RO_TEXT = {
     "Get your": "Recapătă-ți",
     "space back.": "spațiul.",
     "Start with today's 25 swipes. Your photos stay on your device the whole time.": "Începe cu cele 25 de glisări de azi. Pozele tale rămân tot timpul pe telefon.",
-    "Requires iOS 18 or later. iPhone and iPad.": "Necesită iOS 18 sau mai nou. iPhone și iPad.",
+    "Requires iOS 17 or later. iPhone and iPad.": "Necesită iOS 17 sau mai nou. iPhone și iPad.",
     "Photo and video cleaner for iPhone and iPad. Swipe to delete, on your device.": "Curățare poze și video pentru iPhone și iPad. Glisezi ca să ștergi, direct pe dispozitiv.",
     "App Store": "App Store",
     "Legal": "Informații juridice",
@@ -267,7 +267,7 @@ def head_for(page, lang, body_html):
         graph.append({
             "@type": "MobileApplication", "@id": BASE + "/#app", "name": "Kipply",
             "alternateName": "Kipply: Phone Cleaner",
-            "description": APP_DESC[lang], "operatingSystem": "iOS 18.0 or later",
+            "description": APP_DESC[lang], "operatingSystem": "iOS 17.0 or later",
             "applicationCategory": "UtilitiesApplication", "url": url,
             "image": BASE + "/img/icon.webp",
             "screenshot": [f"{BASE}/img/screens/{s}-720.webp" for s in SCREENS],
@@ -295,7 +295,7 @@ def head_for(page, lang, body_html):
     <title>{esc(title)}</title>
     <meta name="description" content="{esc(desc)}">
     <meta name="color-scheme" content="dark">
-    <meta name="theme-color" content="#050b1c">
+    <meta name="theme-color" content="#153464" data-scrolled="#050b1c">
     <link rel="canonical" href="{url}">
     <link rel="alternate" hreflang="en" href="{lang_url(page, 'en')}">
     <link rel="alternate" hreflang="ro" href="{lang_url(page, 'ro')}">
